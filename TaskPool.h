@@ -58,7 +58,7 @@ private:
 	double simulation_end_time_;
 
 	static double get_deadline(int benchmarkNumber);
-	int setTaskName(int benchmarkNumber, char* dest) const;
+	static int setTaskName(int benchmarkNumber, char* dest);
 	double getTimeInterval(void);
 	static int get_benchmark_number(char* name);
 

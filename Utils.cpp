@@ -32,8 +32,9 @@ double getEstimateTime(Task& task) {
 	{29.25, 57.37, 1.11, 220.39, 158.54, 19.66, 18.85, 45.5, 164.65, 34.03, 151.92, 17.16, 118.99, 35.16, 4.05, 9.64, 1.7, 59.05, 148.18, 60.95, 2.23, 106.27, 284.35, 42.65, 63.29, 126.67, 196.43, 10.7, 71.32} };
 
 
+	return estimateTable[0][task.benchmark_num];
+
 	//return estimateTable[core][taskNameAtoi(task.name)];
-	return 0;
 	//나중에 추가
 }
 void printAssign(Task& task) 

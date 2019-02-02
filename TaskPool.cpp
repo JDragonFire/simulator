@@ -20,28 +20,8 @@ int TaskPool::reloadTaskSeeker(void) {
 }
 
 
-Task& TaskPool::dequeue_task() {
-	/*
-	buf.taskNumber = pool.at(nowTaskNum).taskNumber;
-	buf.arrivalTime = pool.at(nowTaskNum).arrivalTime;
-	buf.deadlineTime = pool.at(nowTaskNum).deadlineTime;
-	strcpy_s(buf.name, pool.at(nowTaskNum).name);
-
-	buf.core = 8;
-	buf.estimateTime = 0;
-
-	buf.startTime = 0;
-	buf.executeTime = 0;
-	buf.finishTime = 0;
-
-	buf.leftTime = 0;
-
-	buf.state = Unexecute;
-	buf.energy = 0;
-
-	nowTaskNum++;
-	*/
-
+Task& TaskPool::dequeue_task() 
+{
 	Task& task { pool.at(nowTaskNum) };
 	nowTaskNum++;
 	return task;
@@ -81,7 +61,7 @@ double TaskPool::get_deadline(int benchmarkNumber) {
 	return arrayDeadline[benchmarkNumber];
 }
 
-int TaskPool::setTaskName(int benchmarkNumber, char* dest) const
+int TaskPool::setTaskName(int benchmarkNumber, char* dest)
 {
 	switch (benchmarkNumber) {
 	case 0:
@@ -301,27 +281,28 @@ void TaskPool::fill(double timeInterval)
 	simulation_start_time_ = getCurrentTime();
 	simulation_end_time_ = simulation_start_time_ + (double)timeInterval;
 
-	double virtualNowTime = simulation_start_time_;
+	double time = simulation_start_time_;
 	double taskInterval = 0;
 
 	//Task tempTask();
 	int taskNumber = 0;
 	int benchmarkSelect = 0;
 
-	while (virtualNowTime < simulation_end_time_) 
+	while (time < simulation_end_time_) 
 	{
 		benchmarkSelect = rand() % BENCHMARK_NUMBER;
 
 
 		char temp[32];
-		setTaskName(benchmarkSelect, temp);
-		Task temptask = Task(taskNumber, virtualNowTime, std::string(temp));
+		Task temptask = Task(taskNumber, time, benchmarkSelect);
+		temptask.name = setTaskName(benchmarkSelect, temp);
+
 		temptask.set_state(TaskState::Unexecuted);
 
 		pool.push_back(temptask);
 
 		taskNumber++;
-		virtualNowTime += getTimeInterval();
+		time += getTimeInterval();
 
 		//delete[] temp;
 	}
@@ -380,7 +361,9 @@ int TaskPool::checkFileConsist(void) {
 			break;
 		}
 		else if (getNum == taskNum) {
-			Task tempTask{ static_cast<unsigned long>(getNum), getAT, getName };//std::string("name") };
+			//TODO:
+			Task tempTask{ static_cast<unsigned long>(getNum), getAT, 0};//std::string("name") };
+			tempTask.name = getName;
 			pool.push_back(tempTask);
 			taskNum++;
 		}
@@ -445,7 +428,8 @@ int TaskPool::checkFileConsist_Real(void) {
 		}
 
 		if (getNum >= countNum) {
-			Task tempTask{ static_cast<unsigned long>(getNum), getAT, getName };
+			Task tempTask{ static_cast<unsigned long>(getNum), getAT, 0};
+			tempTask.name = getName;
 			
 			pool.push_back(tempTask);
 			taskNum++;
