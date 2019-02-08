@@ -298,6 +298,7 @@ void TaskPool::fill(double timeInterval)
 		temptask.name = setTaskName(benchmarkSelect, temp);
 
 		temptask.set_state(TaskState::Unexecuted);
+		temptask.benchmark_num = benchmarkSelect;
 
 		pool.push_back(temptask);
 
