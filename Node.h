@@ -22,6 +22,8 @@ public:
 
 	double get_left_time() const;
 	double get_exe_time() const;
+	void set_total_exetime();
+	double get_total_exetime();
 	NodeState get_state() const;
 
 	void enqueue_task(Task& task);
@@ -34,6 +36,7 @@ public:
 
 private:
 	static int id_gen_;
+	double total_exetime_=0;
 	//Task* current_task_ptr_ = nullptr;
 	Task current_task_;
 	double current_time_ = 0;

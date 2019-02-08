@@ -6,6 +6,7 @@
 #include "Scheduler.h"
 #include "TaskPool.h"
 #include "Task.h"
+#include "Simulation.h"
 
 #define MAIN 0
 #define SET_ENV 1
