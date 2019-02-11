@@ -156,6 +156,7 @@
     <ClCompile Include="Job.cpp" />
     <ClCompile Include="Logger.cpp" />
     <ClCompile Include="Node.cpp" />
+    <ClCompile Include="NodeSpec.cpp" />
     <ClCompile Include="SchedulerAlgorithm.cpp" />
     <ClCompile Include="Scheduler.cpp" />
     <ClCompile Include="main.cpp" />
@@ -169,7 +170,9 @@
     <ClInclude Include="Cluster.h" />
     <ClInclude Include="Job.h" />
     <ClInclude Include="Logger.h" />
+    <ClInclude Include="MCTAlgorithm.h" />
     <ClInclude Include="Node.h" />
+    <ClInclude Include="NodeSpec.h" />
     <ClInclude Include="RandomAlgorithm.h" />
     <ClInclude Include="SchedulerAlgorithm.h" />
     <ClInclude Include="Scheduler.h" />

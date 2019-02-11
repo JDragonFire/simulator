@@ -4,6 +4,8 @@ using namespace std;
 
 int Node::id_gen_ = 0;
 
+Node::Node(int specNum) : spec_{ specNum } {}
+
 NodeState Node::get_state() const
 {
 	return state_;
@@ -122,6 +124,12 @@ double Node::get_left_time() const
 	}
 
 }
+
+double Node::get_queue_left_time() const
+{
+	return queue_.get_time_left() + paused_queue_.get_time_left();
+}
+
 double Node::get_exe_time() const
 {
 	if (state_ != NodeState::Idle) {

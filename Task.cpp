@@ -4,6 +4,11 @@
 
 using namespace std;
 
+double Task::get_estimated_time(const NodeSpec& spec) const
+{
+	return spec.value_table[benchmark_num];
+}
+
 std::string Task::print()
 {
 	std::stringstream sstream;

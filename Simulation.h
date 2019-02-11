@@ -6,6 +6,7 @@
 #include "Scheduler.h"
 #include "TaskPool.h"
 #include "Task.h"
+#include "RandomAlgorithm.h"
 
 #define MAIN 0
 #define SET_ENV 1
@@ -39,7 +40,7 @@ public:
 	void run_scheduler(double currentTime, Task& arrivedTask);
 	
 	void print_intro();
-	void print_menu(int select);
+	static void print_menu(int select);
 	void print_result();
 
 	void set_simulation_environment();
@@ -57,6 +58,7 @@ private:
 	Cluster cluster_;
 	TaskPool taskPool_;
 
-	
+	//remove_reference_t<unique_ptr<RandomAlgorithm>> algorithm_ptr_;
+	unique_ptr<SchedulerAlgorithm> algorithm_;
 };
 

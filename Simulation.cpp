@@ -1,8 +1,10 @@
 #include "Simulation.h"
+#include "RandomAlgorithm.h"
+#include "MCTAlgorithm.h"
 
 
 Simulation::Simulation(SchedulerAlgorithm& algorithm, double simulationTime, int nodeNumber)
-	: scheduler_{algorithm}, simulationTime{simulationTime}
+	: simulationTime{simulationTime}
 {
 	for (int i = 0; i < nodeNumber; i++)
 		nodes_.emplace_back();
@@ -17,7 +19,7 @@ void Simulation::simulate()
 
 	print_intro();
 
-	while (1)
+	while (true)
 	{
 	
 		print_menu(MAIN);
@@ -42,24 +44,15 @@ void Simulation::simulate()
 			taskPool_.flush();
 			taskPool_.fill(simulationTime);
 			
-
-
 			for (auto& node : nodes_)
 				node.set_current_time(taskPool_.getSimulationStartTime());
 
-
 			double nextAT = taskPool_.getTime(); //nextArrivalTime
-
-
 
 			Task* arrived_task = &taskPool_.dequeue_task();
 
-
-			//	cout<< "5" << endl;
 			printArrive(*arrived_task);
-			//	cout<< "6" << endl;
 			run_scheduler(nextAT, *arrived_task);
-			//	cout<< "7" << endl;
 
 			int count = 0;
 
@@ -137,8 +130,6 @@ void Simulation::simulate()
 				}
 			}
 
-		
-
 			logger_.createLogFile(scheduler_.get_algorithm_name());
 
 			print_result();
@@ -213,7 +204,6 @@ void Simulation::set_simulation_environment()
 	int coreType = 0;
 	int algo = 0;
 
-
 	while (1)
 	{
 		print_menu(SET_ENV);
@@ -235,26 +225,31 @@ void Simulation::set_simulation_environment()
 			cout << "Set Number of cores : ";
 			cin >> numNode;
 			
-			cout << assignedNode << "nodes are assigned core numbers out of " << numNode << endl;
+			cout << assignedNode << " nodes are assigned core numbers out of " << numNode << endl;
 			cout << endl;
 
 			while (assignedNode < numNode)
 			{
 				cout << "number of cores (maximum " << numNode - assignedNode << ") : ";
 				cin >> temp;
-				cout << "Select node type for " << temp << " cores (0-1) : ";
+				cout << "Select node type for " << temp << " cores (1-2) : ";
 				cin >> coreType;
 				for (int ii = assignedNode; ii < assignedNode + temp; ii++)
 				{
 					// create nodes and assign node types
 					// node creator
 					// set node type
+					nodes_.emplace_back(coreType);
 					cout << assignedNode << " ";
 				}
 				cout << endl;
 				cout << temp << " cores are set to be type " << coreType << endl;;
 				assignedNode += temp;
 			}
+
+			// TODO: types
+			for (int i = 0; i < assignedNode; i++)
+				nodes_.emplace_back();
 
 			break;
 		case SET_ALGO:
@@ -265,10 +260,11 @@ void Simulation::set_simulation_environment()
 			{
 			case 1:
 				cout << "scheduler set to use random algorithm" << endl;
+				scheduler_.change_algorithm(new RandomAlgorithm);
 				break;
 			case 2:
 				cout << "scheduler set to use MCT algorithm" << endl;
-
+				scheduler_.change_algorithm(new MCTAlgorithm);
 				break;
 			case 3:
 				cout << "scheduler set to use algorithm 3" << endl;
@@ -280,7 +276,6 @@ void Simulation::set_simulation_environment()
 				break;
 			case 5:
 				cout << "scheduler set to use algorithm 5" << endl;
-				;
 
 				break;
 			}

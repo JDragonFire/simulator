@@ -11,6 +11,9 @@ class Node
 public:
 	const int Id{ id_gen_++ };
 
+	Node() = default;
+	Node(int specNum);
+
 	//virtual ~Node();
 	double execute(double next_arrival_time, Logger& logger);
 	//double kill();
@@ -21,6 +24,7 @@ public:
 	Task& get_task();
 
 	double get_left_time() const;
+	double get_queue_left_time() const;
 	double get_exe_time() const;
 	NodeState get_state() const;
 
@@ -31,15 +35,19 @@ public:
 	bool is_arrival_time_reached() const { return arrival_time_reached_; }
 	void set_arrival_time_reached(const bool value) { arrival_time_reached_ = value; }
 
+	const NodeSpec& get_spec() const { return spec_; }
+
+	void set_spec(int specNum) { specNum == 1 ? spec_ = NodeSpec::spec1 : NodeSpec::spec2; }
 
 private:
 	static int id_gen_;
-	//Task* current_task_ptr_ = nullptr;
+
+	NodeSpec spec_;
 	Task current_task_;
 	double current_time_ = 0;
 	double left_time_ = 0;
 	double exe_time_ = 0;
-	NodeState state_{NodeState::Idle}; // Should be node state instead?
+	NodeState state_{NodeState::Idle};
 	Queue queue_;
 	PausedQueue paused_queue_;
 	bool arrival_time_reached_ = false;

@@ -22,12 +22,12 @@ Task VirtualQueue::dequeue()
 	return task;
 }
 
-double VirtualQueue::get_time_left() {
+double VirtualQueue::get_time_left() const
+{
 	double sumLeft = 0;
 
-	for (unsigned int i = 0; i < list_.size(); i++) {
-		sumLeft += list_.at(i).leftTime;
-	}
+	for (const auto& i : list_)
+		sumLeft += i.leftTime;
 
 	return sumLeft;
 }

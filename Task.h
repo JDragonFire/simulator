@@ -3,6 +3,7 @@
 #include <utility>
 #include <iomanip>
 #include "States.h"
+#include "NodeSpec.h"
 //#include "TaskPool.h"
 
 //#include "Logger.h"
@@ -15,7 +16,6 @@ public:
 	int benchmark_num;
 	double estimatedTime{0};
 	double leftTime{0};
-	int benchmark_num;
 
 	Task() : id{ 0 }, name { "undefined" }{}
 
@@ -40,6 +40,8 @@ public:
 
 	int get_executed_core_id() const { return executed_core_id_; }
 	void set_executed_core_id(const int id) { executed_core_id_ = id; }
+
+	double get_estimated_time(const NodeSpec& spec) const;
 
 	std::string print();
 
