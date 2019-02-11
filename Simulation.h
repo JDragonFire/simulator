@@ -7,6 +7,7 @@
 #include "TaskPool.h"
 #include "Task.h"
 #include "RandomAlgorithm.h"
+#include "Simulation.h"
 
 #define MAIN 0
 #define SET_ENV 1
@@ -58,7 +59,6 @@ private:
 	Cluster cluster_;
 	TaskPool taskPool_;
 
-	//remove_reference_t<unique_ptr<RandomAlgorithm>> algorithm_ptr_;
-	unique_ptr<SchedulerAlgorithm> algorithm_;
+	
 };
 

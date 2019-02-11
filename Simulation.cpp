@@ -295,6 +295,11 @@ void Simulation::print_result()
 	cout << "make span" << endl;
 	cout << "execution success rate " << endl;
 	cout << "cput utilization " << endl;
+	for (auto& node : nodes_)
+	{
+		cout << "CPU usage " << node.get_total_exetime() << endl;
+	}
+
 	// 다른 기타등등 결과
 	
 	cout << endl;

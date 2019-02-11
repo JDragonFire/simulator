@@ -82,6 +82,7 @@ double Node:: execute(double next_arrival_time, Logger& logger)
 		current_time_ += task.leftTime;
 		//cout << "5 : " << cpuNowTime[core] << endl;
 		task.set_execution_time(task.get_execution_time() + task.leftTime);
+		set_total_exetime();
 		task.leftTime = 0;
 		task.set_finished_time(current_time_);
 		task.set_state(TaskState::Completed);
@@ -139,6 +140,16 @@ double Node::get_exe_time() const
 		return 0;
 	}
 
+}
+
+void Node::set_total_exetime()
+{
+	total_exetime_ = total_exetime_ + exe_time_;
+}
+
+double Node::get_total_exetime()
+{
+	return total_exetime_;
 }
 
 

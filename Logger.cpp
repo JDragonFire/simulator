@@ -56,6 +56,7 @@ int Logger:: createLogFile(const string& name) {
 	out_log<<std::ctime(&time)<<endl;
 	out_log<<"Total number of logs : "<< numComplete<<endl;
 	out_log.close();
+
 	return 0;
 }
 int Logger::clearLog()
