@@ -63,35 +63,35 @@
     <ClCompile Include="Cluster_Simulation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Logger.cpp">
-      <Filter>Old</Filter>
-    </ClCompile>
-    <ClCompile Include="NodeSpec.cpp">
-      <Filter>Old</Filter>
-    </ClCompile>
-    <ClCompile Include="Scheduler.cpp">
-      <Filter>Old</Filter>
-    </ClCompile>
-    <ClCompile Include="SchedulerAlgorithm.cpp">
-      <Filter>Old</Filter>
-    </ClCompile>
-    <ClCompile Include="Simulation.cpp">
-      <Filter>Old</Filter>
-    </ClCompile>
-    <ClCompile Include="Task.cpp">
-      <Filter>Old</Filter>
-    </ClCompile>
-    <ClCompile Include="TaskPool.cpp">
-      <Filter>Old</Filter>
-    </ClCompile>
     <ClCompile Include="Utils.cpp">
-      <Filter>Old</Filter>
-    </ClCompile>
-    <ClCompile Include="VirtualQueue.cpp">
       <Filter>Old</Filter>
     </ClCompile>
     <ClCompile Include="dependencies\spdlog.cpp">
       <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="Old\Logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Old\NodeSpec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Old\SchedulerAlgorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Old\Task.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Old\TaskPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Old\VirtualQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Old\Scheduler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Old\Simulation.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -119,40 +119,7 @@
     <ClInclude Include="Queue.h">
       <Filter>Model\Include</Filter>
     </ClInclude>
-    <ClInclude Include="NodeSpec.h">
-      <Filter>Old</Filter>
-    </ClInclude>
-    <ClInclude Include="MCTAlgorithm.h">
-      <Filter>Old</Filter>
-    </ClInclude>
-    <ClInclude Include="Logger.h">
-      <Filter>Old</Filter>
-    </ClInclude>
-    <ClInclude Include="RandomAlgorithm.h">
-      <Filter>Old</Filter>
-    </ClInclude>
-    <ClInclude Include="Scheduler.h">
-      <Filter>Old</Filter>
-    </ClInclude>
-    <ClInclude Include="SchedulerAlgorithm.h">
-      <Filter>Old</Filter>
-    </ClInclude>
-    <ClInclude Include="Simulation.h">
-      <Filter>Old</Filter>
-    </ClInclude>
-    <ClInclude Include="States.h">
-      <Filter>Old</Filter>
-    </ClInclude>
-    <ClInclude Include="Task.h">
-      <Filter>Old</Filter>
-    </ClInclude>
-    <ClInclude Include="TaskPool.h">
-      <Filter>Old</Filter>
-    </ClInclude>
     <ClInclude Include="Utils.h">
-      <Filter>Old</Filter>
-    </ClInclude>
-    <ClInclude Include="VirtualQueue.h">
       <Filter>Old</Filter>
     </ClInclude>
     <ClInclude Include="Cluster_Simulation.h">
@@ -167,5 +134,44 @@
     <ClInclude Include="Scenario.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Old\Logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Old\MCTAlgorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Old\NodeSpec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Old\RandomAlgorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Old\SchedulerAlgorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Old\State.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Old\States.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Old\Task.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Old\TaskPool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Old\VirtualQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Old\Scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Old\Simulation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Old\logs.txt" />
   </ItemGroup>
 </Project>

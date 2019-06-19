@@ -1,7 +1,7 @@
 #pragma once
-#include "Task.h"
-#include "States.h"
-#include "VirtualQueue.h"
+#include "old/Task.h"
+#include "old/States.h"
+#include "old/VirtualQueue.h"
 #include "EnumConverter.h"
 class Logger;
 

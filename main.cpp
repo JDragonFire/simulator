@@ -1,6 +1,4 @@
 #include <iostream>
-#include "Simulation.h"
-#include "RandomAlgorithm.h"
 #include "Parser.h"
 #include <filesystem>
 #include <direct.h>

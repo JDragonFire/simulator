@@ -2,7 +2,7 @@
 #ifndef LOGGER_H
 #define LOGGER_H
 #include "Task.h"
-#include "Utils.h"
+#include "../Utils.h"
 #include <iostream>
 #include <stdio.h>
 #include <time.h>

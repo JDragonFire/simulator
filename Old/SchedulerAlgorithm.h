@@ -1,6 +1,8 @@
 #pragma once
 #include <string>
-#include "Cluster.h"
+#include "../Cluster.h"
+
+class Task;
 
 class SchedulerAlgorithm
 {

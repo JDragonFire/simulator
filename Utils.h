@@ -1,7 +1,7 @@
 #pragma once
-#include "Task.h"
 #include <vector>
 #include <random>
+#include "Old/Task.h"
 
 int copyTask(Task& src);
 double getEstimateTime(Task& task);

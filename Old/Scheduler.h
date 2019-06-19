@@ -1,6 +1,6 @@
 #pragma once
-#include "old/SchedulerAlgorithm.h"
-#include "old/RandomAlgorithm.h"
+#include "SchedulerAlgorithm.h"
+#include "RandomAlgorithm.h"
 
 class Scheduler
 {
