@@ -2,6 +2,7 @@
 #include "RandomAlgorithm.h"
 #include "MCTAlgorithm.h"
 
+using namespace std;
 
 Simulation::Simulation(SchedulerAlgorithm& algorithm, double simulationTime, int nodeNumber)
 	: simulationTime{simulationTime}

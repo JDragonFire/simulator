@@ -9,9 +9,9 @@ public:
 
 	explicit Scheduler(SchedulerAlgorithm* algorithm);
 
-	void run(double currentTime, std::vector<Node>& cluster, Task& arrivedTask) const;
+	void run(double currentTime, std::vector<Host>& cluster, Task& arrivedTask) const;
 
-	const string& get_algorithm_name() const { return algorithm_->algorithm_name; }
+	const std::string& get_algorithm_name() const { return algorithm_->algorithm_name; }
 	const bool is_algorithm_using_complete_signal();
 
 	Scheduler& operator=(Scheduler&&) noexcept;
@@ -20,6 +20,6 @@ public:
 	void change_algorithm(SchedulerAlgorithm* algorithm);
 
 private:
-	unique_ptr<SchedulerAlgorithm> algorithm_;
+	std::unique_ptr<SchedulerAlgorithm> algorithm_;
 };
 

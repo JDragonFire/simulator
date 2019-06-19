@@ -1,5 +1,6 @@
 #include "TaskPool.h"
 
+using namespace std;
 
 TaskPool::TaskPool() {
 	nowTaskNum = 0;

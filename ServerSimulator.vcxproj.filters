@@ -13,92 +13,158 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Dependencies">
+      <UniqueIdentifier>{e6373c29-59a7-49b4-8774-2d4676191624}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{bec50b6b-b4b6-40c3-961a-54823a221918}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{7baf4d15-d8b8-40c8-90fa-78f36b0ca0b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model\Include">
+      <UniqueIdentifier>{663baef8-41de-409a-b2a4-dbb8b461a14f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Old">
+      <UniqueIdentifier>{7d004a8a-37d1-4320-a776-d577268fd9c8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Node.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="VirtualQueue.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Job.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Logger.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SchedulerAlgorithm.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Scheduler.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Simulation.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Utils.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Cluster.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TaskPool.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Task.cpp">
+    <ClCompile Include="Dispatcher.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="NodeSpec.cpp">
+    <ClCompile Include="Scenario.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\json11.cpp">
+      <Filter>Dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cluster.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Host.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Job.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Queue.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Policy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cluster_Simulation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Old</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeSpec.cpp">
+      <Filter>Old</Filter>
+    </ClCompile>
+    <ClCompile Include="Scheduler.cpp">
+      <Filter>Old</Filter>
+    </ClCompile>
+    <ClCompile Include="SchedulerAlgorithm.cpp">
+      <Filter>Old</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulation.cpp">
+      <Filter>Old</Filter>
+    </ClCompile>
+    <ClCompile Include="Task.cpp">
+      <Filter>Old</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskPool.cpp">
+      <Filter>Old</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Old</Filter>
+    </ClCompile>
+    <ClCompile Include="VirtualQueue.cpp">
+      <Filter>Old</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\spdlog.cpp">
+      <Filter>Dependencies</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Task.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="json.hpp">
+      <Filter>Dependencies</Filter>
     </ClInclude>
-    <ClInclude Include="Node.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="dependencies\json11.hpp">
+      <Filter>Dependencies</Filter>
     </ClInclude>
-    <ClInclude Include="VirtualQueue.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="EnumConverter.cpp">
+      <Filter>Utils</Filter>
     </ClInclude>
-    <ClInclude Include="Job.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="EnumConverter.h">
+      <Filter>Utils</Filter>
     </ClInclude>
-    <ClInclude Include="Logger.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RandomAlgorithm.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SchedulerAlgorithm.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scheduler.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Simulation.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="States.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Utils.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Host.h">
+      <Filter>Model\Include</Filter>
     </ClInclude>
     <ClInclude Include="Cluster.h">
-      <Filter>Header Files</Filter>
+      <Filter>Model\Include</Filter>
     </ClInclude>
-    <ClInclude Include="TaskPool.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Job.h">
+      <Filter>Model\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Queue.h">
+      <Filter>Model\Include</Filter>
     </ClInclude>
     <ClInclude Include="NodeSpec.h">
-      <Filter>Header Files</Filter>
+      <Filter>Old</Filter>
     </ClInclude>
     <ClInclude Include="MCTAlgorithm.h">
+      <Filter>Old</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Old</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomAlgorithm.h">
+      <Filter>Old</Filter>
+    </ClInclude>
+    <ClInclude Include="Scheduler.h">
+      <Filter>Old</Filter>
+    </ClInclude>
+    <ClInclude Include="SchedulerAlgorithm.h">
+      <Filter>Old</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulation.h">
+      <Filter>Old</Filter>
+    </ClInclude>
+    <ClInclude Include="States.h">
+      <Filter>Old</Filter>
+    </ClInclude>
+    <ClInclude Include="Task.h">
+      <Filter>Old</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskPool.h">
+      <Filter>Old</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Old</Filter>
+    </ClInclude>
+    <ClInclude Include="VirtualQueue.h">
+      <Filter>Old</Filter>
+    </ClInclude>
+    <ClInclude Include="Cluster_Simulation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Policy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenario.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

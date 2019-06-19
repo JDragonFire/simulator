@@ -42,7 +42,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -105,8 +105,9 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;SPDLOG_COMPILED_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -141,8 +142,9 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;SPDLOG_COMPILED_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -153,10 +155,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Cluster.cpp" />
+    <ClCompile Include="Cluster_Simulation.cpp" />
+    <ClCompile Include="dependencies\json11.cpp" />
+    <ClCompile Include="dependencies\spdlog.cpp" />
+    <ClCompile Include="Policy.cpp" />
+    <ClCompile Include="Queue.cpp" />
+    <ClCompile Include="Dispatcher.cpp" />
     <ClCompile Include="Job.cpp" />
     <ClCompile Include="Logger.cpp" />
-    <ClCompile Include="Node.cpp" />
+    <ClCompile Include="Host.cpp" />
     <ClCompile Include="NodeSpec.cpp" />
+    <ClCompile Include="Scenario.cpp" />
+    <ClCompile Include="Parser.cpp" />
     <ClCompile Include="SchedulerAlgorithm.cpp" />
     <ClCompile Include="Scheduler.cpp" />
     <ClCompile Include="main.cpp" />
@@ -168,12 +178,21 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cluster.h" />
+    <ClInclude Include="Cluster_Simulation.h" />
+    <ClInclude Include="dependencies\json11.hpp" />
+    <ClInclude Include="EnumConverter.cpp" />
+    <ClInclude Include="EnumConverter.h" />
+    <ClInclude Include="json.hpp" />
+    <ClInclude Include="Policy.h" />
+    <ClInclude Include="Queue.h" />
     <ClInclude Include="Job.h" />
     <ClInclude Include="Logger.h" />
     <ClInclude Include="MCTAlgorithm.h" />
-    <ClInclude Include="Node.h" />
+    <ClInclude Include="Host.h" />
     <ClInclude Include="NodeSpec.h" />
     <ClInclude Include="RandomAlgorithm.h" />
+    <ClInclude Include="Scenario.h" />
+    <ClInclude Include="Parser.h" />
     <ClInclude Include="SchedulerAlgorithm.h" />
     <ClInclude Include="Scheduler.h" />
     <ClInclude Include="Simulation.h" />

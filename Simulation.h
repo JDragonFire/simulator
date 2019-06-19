@@ -1,6 +1,6 @@
 #pragma once
 #include <vector>
-#include "Node.h"
+#include "Host.h"
 #include "Logger.h"
 #include <iostream>
 #include "Scheduler.h"
@@ -14,10 +14,6 @@
 #define SET_TIME 1
 #define SET_CORE 2
 #define SET_ALGO 3
-
-
-using namespace std;
-
 
 
 
@@ -48,10 +44,10 @@ public:
 
 	//Task& operator=(const Task&) = default;
 
-	vector<Node>& get_nodes() { return nodes_; }
+	std::vector<Host>& get_nodes() { return nodes_; }
 
 private:
-	std::vector<Node> nodes_;
+	std::vector<Host> nodes_;
 	double time_elapsed_;
 	Logger logger_;
 	//Task arrived_task_;
@@ -61,4 +57,3 @@ private:
 
 	
 };
-

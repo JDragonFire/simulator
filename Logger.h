@@ -7,7 +7,6 @@
 #include <stdio.h>
 #include <time.h>
 #include <vector>
-using namespace std;
 
 class Logger
 {
@@ -15,11 +14,11 @@ public:
 	Logger();
 	~Logger();
 	void writeLog(Task& task);
-	int createLogFile(const string& name);
+	int createLogFile(const std::string& name);
 
 	int clearLog();
 private:
-	vector<Task> logs_{};
+	std::vector<Task> logs_{};
 
 };
 

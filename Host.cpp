@@ -1,23 +1,44 @@
-#include "Node.h"
+#include "Host.h"
 #include "Simulation.h"
+#include "Job.h"
+#include "dependencies/spdlog/spdlog.h"
+
+namespace ClusterSimulator
+{
+	int Host::id_gen_ = 0;
+	void Host::execute_job(const Job& job)
+	{
+		if (slot_running_ + job.slot_required > max_slot)
+			spdlog::error("Host {0}: Slot required for job {1} cannot be fulfilled with this host.", id, job.id);
+
+		slot_running_ += job.slot_required;
+	}
+
+	void Host::exit_job(const Job& job)
+	{
+		slot_running_ -= job.slot_required;
+	}
+}
+
+
 using namespace std;
 
-int Node::id_gen_ = 0;
+int Host::id_gen_ = 0;
 
-Node::Node(int specNum) : spec_{ specNum } {}
+Host::Host(int specNum) : spec_{ specNum } {}
 
-NodeState Node::get_state() const
+NodeState Host::get_state() const
 {
 	return state_;
 }
 
-void Node::enqueue_task(Task& task)
+void Host::enqueue_task(Task& task)
 {
 	task.set_executed_core_id(Id);
 	queue_.enqueue(task);
 }
 
-bool Node::try_set_paused_task()
+bool Host::try_set_paused_task()
 {
 	if (paused_queue_.is_empty())
 		return false;
@@ -25,7 +46,7 @@ bool Node::try_set_paused_task()
 	return true;
 }
 
-bool Node::try_set_task_from_queue()
+bool Host::try_set_task_from_queue()
 {
 	if (queue_.is_empty())
 		return false;
@@ -33,7 +54,8 @@ bool Node::try_set_task_from_queue()
 	return true;
 }
 
-double Node:: execute(double next_arrival_time, Logger& logger)
+
+double Host:: execute(double next_arrival_time, Logger& logger)
 {
 	Task& task = current_task_;
 
@@ -94,12 +116,12 @@ double Node:: execute(double next_arrival_time, Logger& logger)
 	return task.get_execution_time();
 }
 
-void Node:: set_current_time(const double time)
+void Host:: set_current_time(const double time)
 {
 	current_time_ = time;
 }
 
-void Node::set_task(Task&& task)
+void Host::set_task(Task&& task)
 {
 	//current_task_ptr_ = &task;
 	current_task_ = task;
@@ -108,12 +130,12 @@ void Node::set_task(Task&& task)
 	state_ = NodeState::Running;
 	//set_current_time(task.get_arrival_time());
 }
-Task& Node:: get_task()
+Task& Host:: get_task()
 {	
 	// Unsafe
 	return current_task_;
 }
-double Node::get_left_time() const
+double Host::get_left_time() const
 {
 	if (state_ != NodeState::Idle) 
 	{
@@ -126,12 +148,12 @@ double Node::get_left_time() const
 
 }
 
-double Node::get_queue_left_time() const
+double Host::get_queue_left_time() const
 {
 	return queue_.get_time_left() + paused_queue_.get_time_left();
 }
 
-double Node::get_exe_time() const
+double Host::get_exe_time() const
 {
 	if (state_ != NodeState::Idle) {
 		return exe_time_;
@@ -142,12 +164,12 @@ double Node::get_exe_time() const
 
 }
 
-void Node::set_total_exetime()
+void Host::set_total_exetime()
 {
 	total_exetime_ = total_exetime_ + exe_time_;
 }
 
-double Node::get_total_exetime()
+double Host::get_total_exetime()
 {
 	return total_exetime_;
 }

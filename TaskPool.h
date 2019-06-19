@@ -16,8 +16,6 @@
 #include "Task.h"
 #include "Utils.h"
 
-using namespace std;
-
 typedef enum { Random, Simulator, Original } SOURCE;
 
 class TaskPool {
@@ -52,7 +50,7 @@ private:
 
 	int nowTaskNum;
 
-	vector<Task> pool{};
+	std::vector<Task> pool{};
 
 	double simulation_start_time_;
 	double simulation_end_time_;

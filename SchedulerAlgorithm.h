@@ -10,6 +10,6 @@ public:
 
 	SchedulerAlgorithm(const std::string& name, bool isUsingCompleteSignal = false);
 	virtual ~SchedulerAlgorithm() = default;
-	virtual void run(vector<Node>& cluster, Task& arrivedTask) = 0;
+	virtual void run(std::vector<Host>& cluster, Task& arrivedTask) = 0;
 };
 

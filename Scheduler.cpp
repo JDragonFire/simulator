@@ -6,7 +6,7 @@ Scheduler::Scheduler(SchedulerAlgorithm* algorithm)
 	algorithm_.reset(algorithm);
 }
 
-void Scheduler::run(double currentTime, std::vector<Node>& cluster, Task& arrivedTask) const
+void Scheduler::run(double currentTime, std::vector<Host>& cluster, Task& arrivedTask) const
 {
 	algorithm_->run(cluster, arrivedTask);
 }

@@ -6,10 +6,10 @@ class MCTAlgorithm : public SchedulerAlgorithm
 public:
 	MCTAlgorithm() : SchedulerAlgorithm("MCT"){}
 
-	void run(std::vector<Node>& cluster, Task& arrivedTask) override
+	void run(std::vector<Host>& cluster, Task& arrivedTask) override
 	{
 		double minValue = 500000;
-		Node* smallest = nullptr;
+		Host* smallest = nullptr;
 		for (auto& node : cluster)
 		{
 			double value = node.get_left_time() + node.get_queue_left_time() + arrivedTask.get_estimated_time(node.get_spec());

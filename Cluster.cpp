@@ -1,12 +1,8 @@
 #include "Cluster.h"
 
 
-
-Cluster::Cluster()
+namespace ClusterSimulator
 {
+
 }
 
-
-Cluster::~Cluster()
-{
-}

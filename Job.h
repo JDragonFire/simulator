@@ -1,26 +1,45 @@
 #pragma once
-#include <vector>
-#include "Task.h"
-/*
-class Job
+#include <string>
+#include <chrono>
+#include <memory>
+//#include "Scenario.h"
+
+namespace ClusterSimulator
 {
-public:
-	const unsigned long id;
-	const double submitted_time;
-	const int num_cpu_required;
+	struct ScenarioEntry;
+	/*enum JobState
+	{
+		PEND, RUN, DONE, EXIT, PSUSP, USUSP, SSUSP, POST_DONE, POST_ERR, UNKWN, WAIT, ZOMBI
+	};*/
+	class Queue;
+	//enum class HostStatus;
 
-	Job();
-	~Job();
+	class Job
+	{
+	public:
+		const int id{ id_gen_++ };
+		const std::string application_name;
+		const int slot_required;
+		const std::chrono::milliseconds run_time;
+		//std::shared_ptr<Queue> queue_managing_this_job;
 
-	void initialise_tasks_from_file(std::string file_dir);
-	void initialise_randomly();
-	void reset();
 
-	Task& get_next_task();
+		Job(const ScenarioEntry& entry, const Queue& queue);
 
-private:
-	int task_index_;
-	std::vector<Task> tasks_;
-};
+		const std::string& get_dedicated_host_name() const { return dedicated_host_name_; }
+		const std::string& get_exit_host_status() const { return exit_host_status_; }
 
-*/
+	private:
+		const std::string dedicated_host_name_;
+		const std::string exit_host_status_;
+		//unsigned long id_;
+		//double submitted_time_;
+		//int num_cpu_required_;
+		//int task_index_;
+		//std::vector<Task> tasks_;
+
+		static int id_gen_;
+	};
+}
+
+

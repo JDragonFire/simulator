@@ -1,0 +1,201 @@
+[2019-06-18 04:17:44.332] [file_logger] [info] Current Time: 0
+[2019-06-18 04:17:44.332] [file_logger] [info] Job #0 is added to Queue fspro.
+[2019-06-18 04:17:44.333] [file_logger] [info] Job #0 is dispatched to Host chas2643
+[2019-06-18 04:17:44.333] [file_logger] [info] Current Time: 1000
+[2019-06-18 04:17:44.333] [file_logger] [info] Job #1 is added to Queue hspice_short.
+[2019-06-18 04:17:44.333] [file_logger] [info] Job #1 is dispatched to Host phas2972
+[2019-06-18 04:17:44.333] [file_logger] [info] Current Time: 1000
+[2019-06-18 04:17:44.333] [file_logger] [info] Job #2 is added to Queue fss_short.
+[2019-06-18 04:17:44.333] [file_logger] [info] Job #2 is dispatched to Host chas1601
+[2019-06-18 04:17:44.333] [file_logger] [info] Current Time: 1000
+[2019-06-18 04:17:44.333] [file_logger] [info] Job #3 is added to Queue star-rcxt.
+[2019-06-18 04:17:44.333] [file_logger] [info] Job #3 is dispatched to Host chas3001
+[2019-06-18 04:17:44.333] [file_logger] [info] Current Time: 1000
+[2019-06-18 04:17:44.334] [file_logger] [info] Job #4 is added to Queue verilog_regression.
+[2019-06-18 04:17:44.334] [file_logger] [info] Job #4 is dispatched to Host chas3148
+[2019-06-18 04:17:44.334] [file_logger] [info] Current Time: 1000
+[2019-06-18 04:17:44.334] [file_logger] [info] Job #5 is added to Queue fsspice_short.
+[2019-06-18 04:17:44.334] [file_logger] [info] Job #5 is dispatched to Host chas2642
+[2019-06-18 04:17:44.334] [file_logger] [info] Current Time: 1000
+[2019-06-18 04:17:44.334] [file_logger] [info] Job #6 is added to Queue fsspice_short.
+[2019-06-18 04:17:44.334] [file_logger] [info] Job #6 is dispatched to Host chas1665
+[2019-06-18 04:17:44.334] [file_logger] [info] Current Time: 2000
+[2019-06-18 04:17:44.334] [file_logger] [info] Job #7 is added to Queue fsspice_short.
+[2019-06-18 04:17:44.334] [file_logger] [info] Job #7 is dispatched to Host chas2861
+[2019-06-18 04:17:44.334] [file_logger] [info] Current Time: 2000
+[2019-06-18 04:17:44.335] [file_logger] [info] Job #8 is added to Queue caldrc.
+[2019-06-18 04:17:44.335] [file_logger] [info] Job #8 is dispatched to Host chas1553
+[2019-06-18 04:17:44.335] [file_logger] [info] Current Time: 3000
+[2019-06-18 04:17:44.335] [file_logger] [info] Job #9 is added to Queue fsspice_short.
+[2019-06-18 04:17:44.335] [file_logger] [info] Job #9 is dispatched to Host chas2501
+[2019-06-18 04:17:44.335] [file_logger] [info] Current Time: 3000
+[2019-06-18 04:17:44.335] [file_logger] [info] Job #10 is added to Queue verilog_regression.
+[2019-06-18 04:17:44.335] [file_logger] [info] Job #10 is dispatched to Host chas3134
+[2019-06-18 04:17:44.335] [file_logger] [info] Current Time: 3000
+[2019-06-18 04:17:44.335] [file_logger] [info] Job #11 is added to Queue dpat.
+[2019-06-18 04:17:44.336] [file_logger] [info] Job #11 is dispatched to Host phas3943
+[2019-06-18 04:17:44.336] [file_logger] [info] Current Time: 3000
+[2019-06-18 04:17:44.336] [file_logger] [info] Job #12 is added to Queue fspro.
+[2019-06-18 04:17:44.336] [file_logger] [info] Job #12 is dispatched to Host chas2766
+[2019-06-18 04:17:44.336] [file_logger] [info] Current Time: 3000
+[2019-06-18 04:17:44.336] [file_logger] [info] Job #13 is added to Queue fsspice_short.
+[2019-06-18 04:17:44.336] [file_logger] [info] Job #13 is dispatched to Host chas2659
+[2019-06-18 04:17:44.336] [file_logger] [info] Current Time: 3000
+[2019-06-18 04:17:44.336] [file_logger] [info] Job #14 is added to Queue fss_short.
+[2019-06-18 04:17:44.336] [file_logger] [info] Job #14 is dispatched to Host chas1617
+[2019-06-18 04:17:44.337] [file_logger] [info] Current Time: 4000
+[2019-06-18 04:17:44.337] [file_logger] [info] Job #15 is added to Queue fsspice_short.
+[2019-06-18 04:17:44.337] [file_logger] [info] Job #15 is dispatched to Host chas1638
+[2019-06-18 04:17:44.337] [file_logger] [info] Current Time: 4000
+[2019-06-18 04:17:44.337] [file_logger] [info] Job #16 is added to Queue icc_mt.
+[2019-06-18 04:17:44.337] [file_logger] [info] Job #16 is dispatched to Host chas1810
+[2019-06-18 04:17:44.338] [file_logger] [info] Current Time: 4000
+[2019-06-18 04:17:44.348] [file_logger] [info] Job #17 is added to Queue hspice_short.
+[2019-06-18 04:17:44.349] [file_logger] [info] Job #17 is dispatched to Host phas2961
+[2019-06-18 04:17:44.349] [file_logger] [info] Current Time: 4000
+[2019-06-18 04:17:44.349] [file_logger] [info] Job #18 is added to Queue caldrc.
+[2019-06-18 04:17:44.350] [file_logger] [info] Job #18 is dispatched to Host phas2224
+[2019-06-18 04:17:44.350] [file_logger] [info] Current Time: 4000
+[2019-06-18 04:17:44.351] [file_logger] [info] Job #19 is added to Queue fsspice_short.
+[2019-06-18 04:17:44.352] [file_logger] [info] Job #19 is dispatched to Host chas2708
+[2019-06-18 04:17:44.352] [file_logger] [info] Current Time: 4000
+[2019-06-18 04:17:44.353] [file_logger] [info] Job #20 is added to Queue verilog_regression.
+[2019-06-18 04:17:44.353] [file_logger] [info] Job #20 is dispatched to Host dhas0280
+[2019-06-18 04:17:44.354] [file_logger] [info] Current Time: 5000
+[2019-06-18 04:17:44.354] [file_logger] [info] Job #21 is added to Queue slsilfd.
+[2019-06-18 04:17:44.355] [file_logger] [info] Job #21 is dispatched to Host chas2433
+[2019-06-18 04:17:44.356] [file_logger] [info] Current Time: 12000
+[2019-06-18 04:17:44.356] [file_logger] [info] Current Time: 12000
+[2019-06-18 04:17:44.359] [file_logger] [info] Current Time: 13000
+[2019-06-18 04:17:44.360] [file_logger] [info] Current Time: 14000
+[2019-06-18 04:17:44.362] [file_logger] [info] Current Time: 14000
+[2019-06-18 04:17:44.363] [file_logger] [info] Current Time: 14000
+[2019-06-18 04:17:44.364] [file_logger] [info] Current Time: 14000
+[2019-06-18 04:17:44.365] [file_logger] [info] Job #22 is added to Queue fspro.
+[2019-06-18 04:17:44.365] [file_logger] [info] Job #22 is dispatched to Host chas1646
+[2019-06-18 04:17:44.366] [file_logger] [info] Current Time: 14000
+[2019-06-18 04:17:44.367] [file_logger] [info] Job #23 is added to Queue fss_short.
+[2019-06-18 04:17:44.369] [file_logger] [info] Job #23 is dispatched to Host chas2510
+[2019-06-18 04:17:44.370] [file_logger] [info] Current Time: 14000
+[2019-06-18 04:17:44.370] [file_logger] [info] Job #24 is added to Queue fss_cm.
+[2019-06-18 04:17:44.371] [file_logger] [info] Job #24 is dispatched to Host chas2462
+[2019-06-18 04:17:44.371] [file_logger] [info] Current Time: 14000
+[2019-06-18 04:17:44.372] [file_logger] [info] Job #25 is added to Queue spectre_short.
+[2019-06-18 04:17:44.372] [file_logger] [info] Job #25 is dispatched to Host chas2506
+[2019-06-18 04:17:44.374] [file_logger] [info] Current Time: 14000
+[2019-06-18 04:17:44.374] [file_logger] [info] Job #26 is added to Queue spectre_short.
+[2019-06-18 04:17:44.375] [file_logger] [info] Job #26 is dispatched to Host chas2461
+[2019-06-18 04:17:44.376] [file_logger] [info] Current Time: 14000
+[2019-06-18 04:17:44.376] [file_logger] [info] Job #27 is added to Queue spectre_short.
+[2019-06-18 04:17:44.377] [file_logger] [info] Job #27 is dispatched to Host chas2484
+[2019-06-18 04:17:44.377] [file_logger] [info] Current Time: 14000
+[2019-06-18 04:17:44.378] [file_logger] [info] Job #28 is added to Queue long.
+[2019-06-18 04:17:44.380] [file_logger] [info] Job #28 is dispatched to Host phas3219
+[2019-06-18 04:17:44.383] [file_logger] [info] Current Time: 14000
+[2019-06-18 04:17:44.384] [file_logger] [info] Job #29 is added to Queue zebu_com.
+[2019-06-18 04:17:44.385] [file_logger] [info] Job #29 is dispatched to Host psky0973
+[2019-06-18 04:17:44.385] [file_logger] [info] Current Time: 14000
+[2019-06-18 04:17:44.386] [file_logger] [info] Job #30 is added to Queue hs_short.
+[2019-06-18 04:17:44.386] [file_logger] [info] Job #30 is dispatched to Host phas2980
+[2019-06-18 04:17:44.386] [file_logger] [info] Current Time: 14000
+[2019-06-18 04:17:44.387] [file_logger] [info] Job #31 is added to Queue hs_short.
+[2019-06-18 04:17:44.387] [file_logger] [info] Job #31 is dispatched to Host phas2974
+[2019-06-18 04:17:44.389] [file_logger] [info] Current Time: 14000
+[2019-06-18 04:17:44.390] [file_logger] [info] Job #32 is added to Queue hspice_short.
+[2019-06-18 04:17:44.390] [file_logger] [info] Job #32 is dispatched to Host phas2978
+[2019-06-18 04:17:44.391] [file_logger] [info] Current Time: 14000
+[2019-06-18 04:17:44.391] [file_logger] [info] Job #33 is added to Queue hspice_short.
+[2019-06-18 04:17:44.392] [file_logger] [info] Job #33 is dispatched to Host phas2965
+[2019-06-18 04:17:44.392] [file_logger] [info] Current Time: 14000
+[2019-06-18 04:17:44.393] [file_logger] [info] Job #34 is added to Queue calview.
+[2019-06-18 04:17:44.394] [file_logger] [info] Job #34 is dispatched to Host hsandy1008
+[2019-06-18 04:17:44.395] [file_logger] [info] Current Time: 14000
+[2019-06-18 04:17:44.401] [file_logger] [info] Job #35 is added to Queue star-rcxt_short.
+[2019-06-18 04:17:44.401] [file_logger] [info] Job #35 is dispatched to Host phas3307
+[2019-06-18 04:17:44.402] [file_logger] [info] Current Time: 14000
+[2019-06-18 04:17:44.403] [file_logger] [info] Job #36 is added to Queue star-rcxt_short.
+[2019-06-18 04:17:44.404] [file_logger] [info] Job #36 is dispatched to Host phas1031
+[2019-06-18 04:17:44.404] [file_logger] [info] Current Time: 14000
+[2019-06-18 04:17:44.405] [file_logger] [info] Job #37 is added to Queue caldrc.
+[2019-06-18 04:17:44.405] [file_logger] [info] Job #37 is dispatched to Host phas2225
+[2019-06-18 04:17:44.406] [file_logger] [info] Current Time: 14000
+[2019-06-18 04:17:44.406] [file_logger] [info] Job #38 is added to Queue verilog_regression.
+[2019-06-18 04:17:44.406] [file_logger] [info] Job #38 is dispatched to Host chas3144
+[2019-06-18 04:17:44.407] [file_logger] [info] Current Time: 14000
+[2019-06-18 04:17:44.407] [file_logger] [info] Job #39 is added to Queue gtb.
+[2019-06-18 04:17:44.407] [file_logger] [info] Job #39 is dispatched to Host chas1528
+[2019-06-18 04:17:44.409] [file_logger] [info] Current Time: 14000
+[2019-06-18 04:17:44.410] [file_logger] [info] Job #40 is added to Queue gtb.
+[2019-06-18 04:17:44.411] [file_logger] [info] Job #40 is dispatched to Host chas1526
+[2019-06-18 04:17:44.411] [file_logger] [info] Current Time: 14000
+[2019-06-18 04:17:44.412] [file_logger] [info] Job #41 is added to Queue fsspice_short.
+[2019-06-18 04:17:44.413] [file_logger] [info] Job #41 is dispatched to Host chas2643
+[2019-06-18 04:17:44.413] [file_logger] [info] Current Time: 14000
+[2019-06-18 04:17:44.414] [file_logger] [info] Job #42 is added to Queue fsspice_short.
+[2019-06-18 04:17:44.414] [file_logger] [info] Job #42 is dispatched to Host chas2688
+[2019-06-18 04:17:44.415] [file_logger] [info] Current Time: 14000
+[2019-06-18 04:17:44.415] [file_logger] [info] Job #43 is added to Queue caletc.
+[2019-06-18 04:17:44.416] [file_logger] [info] Job #43 is dispatched to Host chas1575
+[2019-06-18 04:17:44.416] [file_logger] [info] Current Time: 15000
+[2019-06-18 04:17:44.417] [file_logger] [info] Job #44 is added to Queue hs_short.
+[2019-06-18 04:17:44.417] [file_logger] [info] Job #44 is dispatched to Host phas2980
+[2019-06-18 04:17:44.418] [file_logger] [info] Current Time: 15000
+[2019-06-18 04:17:44.420] [file_logger] [info] Job #45 is added to Queue hs_short.
+[2019-06-18 04:17:44.421] [file_logger] [info] Job #45 is dispatched to Host phas2968
+[2019-06-18 04:17:44.421] [file_logger] [info] Current Time: 15000
+[2019-06-18 04:17:44.422] [file_logger] [info] Job #46 is added to Queue hs_short.
+[2019-06-18 04:17:44.422] [file_logger] [info] Job #46 is dispatched to Host phas2974
+[2019-06-18 04:17:44.422] [file_logger] [info] Current Time: 15000
+[2019-06-18 04:17:44.423] [file_logger] [info] Job #47 is added to Queue hs_short.
+[2019-06-18 04:17:44.423] [file_logger] [info] Job #47 is dispatched to Host phas2974
+[2019-06-18 04:17:44.423] [file_logger] [info] Current Time: 15000
+[2019-06-18 04:17:44.424] [file_logger] [info] Job #48 is added to Queue hs_short.
+[2019-06-18 04:17:44.425] [file_logger] [info] Job #48 is dispatched to Host phas2968
+[2019-06-18 04:17:44.425] [file_logger] [info] Current Time: 15000
+[2019-06-18 04:17:44.425] [file_logger] [info] Job #49 is added to Queue hs_short.
+[2019-06-18 04:17:44.426] [file_logger] [info] Job #49 is dispatched to Host phas2958
+[2019-06-18 04:17:44.426] [file_logger] [info] Current Time: 15000
+[2019-06-18 04:17:44.427] [file_logger] [info] Current Time: 24000
+[2019-06-18 04:17:44.430] [file_logger] [info] Current Time: 24000
+[2019-06-18 04:17:44.432] [file_logger] [info] Current Time: 24000
+[2019-06-18 04:17:44.433] [file_logger] [info] Current Time: 24000
+[2019-06-18 04:17:44.434] [file_logger] [info] Current Time: 24000
+[2019-06-18 04:17:44.435] [file_logger] [info] Current Time: 24000
+[2019-06-18 04:17:44.436] [file_logger] [info] Current Time: 26000
+[2019-06-18 04:17:44.437] [file_logger] [info] Current Time: 28000
+[2019-06-18 04:17:44.437] [file_logger] [info] Current Time: 31000
+[2019-06-18 04:17:44.438] [file_logger] [info] Current Time: 40000
+[2019-06-18 04:17:44.441] [file_logger] [info] Current Time: 41000
+[2019-06-18 04:17:44.442] [file_logger] [info] Current Time: 46000
+[2019-06-18 04:17:44.443] [file_logger] [info] Current Time: 59000
+[2019-06-18 04:17:44.444] [file_logger] [info] Current Time: 60000
+[2019-06-18 04:17:44.444] [file_logger] [info] Current Time: 60000
+[2019-06-18 04:17:44.445] [file_logger] [info] Current Time: 81000
+[2019-06-18 04:17:44.446] [file_logger] [info] Current Time: 131000
+[2019-06-18 04:17:44.447] [file_logger] [info] Current Time: 142000
+[2019-06-18 04:17:44.448] [file_logger] [info] Current Time: 143000
+[2019-06-18 04:17:44.448] [file_logger] [info] Current Time: 164000
+[2019-06-18 04:17:44.452] [file_logger] [info] Current Time: 181000
+[2019-06-18 04:17:44.453] [file_logger] [info] Current Time: 188000
+[2019-06-18 04:17:44.454] [file_logger] [info] Current Time: 209000
+[2019-06-18 04:17:44.455] [file_logger] [info] Current Time: 219000
+[2019-06-18 04:17:44.456] [file_logger] [info] Current Time: 219000
+[2019-06-18 04:17:44.457] [file_logger] [info] Current Time: 245000
+[2019-06-18 04:17:44.458] [file_logger] [info] Current Time: 287000
+[2019-06-18 04:17:44.459] [file_logger] [info] Current Time: 294000
+[2019-06-18 04:17:44.460] [file_logger] [info] Current Time: 320000
+[2019-06-18 04:17:44.469] [file_logger] [info] Current Time: 371000
+[2019-06-18 04:17:44.470] [file_logger] [info] Current Time: 432000
+[2019-06-18 04:17:44.472] [file_logger] [info] Current Time: 490000
+[2019-06-18 04:17:44.473] [file_logger] [info] Current Time: 531000
+[2019-06-18 04:17:44.473] [file_logger] [info] Current Time: 1176000
+[2019-06-18 04:17:44.474] [file_logger] [info] Current Time: 2002000
+[2019-06-18 04:17:44.475] [file_logger] [info] Current Time: 4054000
+[2019-06-18 04:17:44.477] [file_logger] [info] Current Time: 5563000
+[2019-06-18 04:17:44.478] [file_logger] [info] Current Time: 5623000
+[2019-06-18 04:17:44.479] [file_logger] [info] Current Time: 8619000
+[2019-06-18 04:17:44.480] [file_logger] [info] Current Time: 8728000
+[2019-06-18 04:17:44.482] [file_logger] [info] Current Time: 9517000
+[2019-06-18 04:17:44.484] [file_logger] [info] Current Time: 10319000
+[2019-06-18 04:17:44.485] [file_logger] [info] Current Time: 14382000
+[2019-06-18 04:17:44.486] [file_logger] [info] Current Time: 31059000

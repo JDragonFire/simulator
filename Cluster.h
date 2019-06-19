@@ -1,16 +1,29 @@
 #pragma once
 #include <vector>
-#include "Node.h"
+#include "Host.h"
 
 // Contains all Nodes
 class Cluster
 {
 public:
-	Cluster();
-	~Cluster();
-	vector<Node> get_all_nodes() const { return nodes_; }
-	void add_node(Node& node) { nodes_.push_back(node); }
+	std::vector<Host> get_all_nodes() const { return nodes_; }
+	void add_node(Host& node) { nodes_.push_back(node); }
 private:
-	std::vector<Node> nodes_;
+	std::vector<Host> nodes_;
 };
+
+namespace ClusterSimulator
+{
+	class Cluster
+	{
+	public:
+		const std::vector<Host> get_all_nodes() const { return nodes_; }
+		auto begin() { return nodes_.begin(); }
+		auto end() { return nodes_.end(); }
+		void add_node(const Host& node) { nodes_.push_back(node); }
+		int count() const { return nodes_.size(); }
+	private:
+		std::vector<Host> nodes_;
+	};
+}
 

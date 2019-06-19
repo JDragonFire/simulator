@@ -22,9 +22,9 @@ void Logger:: writeLog(Task& task)
 	logs_.push_back(task);
 }
 
-int Logger:: createLogFile(const string& name) {
+int Logger:: createLogFile(const std::string& name) {
 	//TODO:
-	ofstream out_log("logs.txt");
+	std::ofstream out_log("logs.txt");
 	
 
 	//sort(logs_.begin(), logs_.end(), compareStart);
@@ -50,11 +50,13 @@ int Logger:: createLogFile(const string& name) {
 	}
 
 	auto currentTime = std::chrono::system_clock::now();
-	auto time = std::chrono::system_clock::to_time_t(currentTime);
-	
+	std::time_t time = std::chrono::system_clock::to_time_t(currentTime);
+	char time_string[25];
+	ctime_s(time_string, 25, &time);
+
 	out_log << "Simulation Start Time : ";
-	out_log<<std::ctime(&time)<<endl;
-	out_log<<"Total number of logs : "<< numComplete<<endl;
+	out_log<< time_string << std::endl;
+	out_log<<"Total number of logs : "<< numComplete<< std::endl;
 	out_log.close();
 
 	return 0;
